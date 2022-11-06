@@ -4,12 +4,12 @@
 namespace App\Tests\Controller;
 
 
-use App\Tests\ServiceControllerTest;
+use App\Tests\ServiceControllerTestUtil;
 use Liip\TestFixturesBundle\Test\FixturesTrait;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class SecurityControllerTest extends ServiceControllerTest
+class SecurityControllerTestUtil extends ServiceControllerTestUtil
 {
     use FixturesTrait;
     public function testDisplayLogin(){

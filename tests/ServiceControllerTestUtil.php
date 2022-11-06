@@ -6,7 +6,7 @@ namespace App\Tests;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class ServiceControllerTest extends WebTestCase
+class ServiceControllerTestUtil extends WebTestCase
 {
     const client = null;
 
