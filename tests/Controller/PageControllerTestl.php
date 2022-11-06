@@ -9,7 +9,7 @@ use Liip\TestFixturesBundle\Test\FixturesTrait;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class PageControllerTestUtil extends ServiceControllerTestUtil
+class PageControllerTestl extends ServiceControllerTestUtil
 {
     use FixturesTrait;
     use NeedLogin;

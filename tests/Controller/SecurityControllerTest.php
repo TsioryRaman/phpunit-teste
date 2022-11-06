@@ -9,13 +9,13 @@ use Liip\TestFixturesBundle\Test\FixturesTrait;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class SecurityControllerTestUtil extends ServiceControllerTestUtil
+class SecurityControllerTest extends ServiceControllerTestUtil
 {
     use FixturesTrait;
     public function testDisplayLogin(){
         $this->getCrawler(Request::METHOD_GET,'/login');
         $this->assertResponseStatusCodeSame(Response::HTTP_OK);
-        $this->assertSelectorTextContains("h1","Se connecter");
+        $this->assertSelectorTextSame("h1","Se connecter");
     }
 
     public function testLoginWithBadCredentials(){
