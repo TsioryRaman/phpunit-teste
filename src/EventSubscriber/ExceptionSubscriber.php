@@ -3,7 +3,6 @@
 namespace App\EventSubscriber;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Symfony\Component\Console\Event\ConsoleCommandEvent;
 use Symfony\Component\HttpKernel\Event\ExceptionEvent;
 
 class ExceptionSubscriber implements EventSubscriberInterface
@@ -16,16 +15,11 @@ class ExceptionSubscriber implements EventSubscriberInterface
     /**
      * @var string
      */
-    private $from;
-    /**
-     * @var string
-     */
     private $to;
 
-    public function __construct(\Swift_Mailer $mailer,string $from,string $to)
+    public function __construct(\Swift_Mailer $mailer,string $to)
     {
         $this->mailer = $mailer;
-        $this->from = $from;
         $this->to = $to;
     }
 

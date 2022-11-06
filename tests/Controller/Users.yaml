@@ -1,0 +1,10 @@
+App\Entity\User:
+  user_simple:
+    email: tsiory@test.fr
+    password: \$2y\$10\$FHkTSMiQm/bvFyjJLCzLLOp4QrWyv6MBnMnSq.uUES1qOyWVUKb1K
+
+
+  user_admin:
+    email: admin@test.fr
+    roles: ['ROLE_ADMIN']
+    password: \$2y\$10\$FHkTSMiQm/bvFyjJLCzLLOp4QrWyv6MBnMnSq.uUES1qOyWVUKb1K
